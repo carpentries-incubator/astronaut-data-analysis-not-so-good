@@ -81,7 +81,7 @@ def test_summarise_categorical_missvals():
     }, index=[0, 1, 2, 3, 4])
 
     expected_result = pd.DataFrame({
-        'country': ["Russia", "USA", pd.NA],
+        'country': ["Russia", "USA", np.nan],
         'count': [1, 3, 1],
         'percentage': [20.0, 60.0, 20.0],
     }, index=[0, 1, 2])
