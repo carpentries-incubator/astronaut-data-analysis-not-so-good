@@ -1,6 +1,7 @@
 import pytest
 import pandas as pd
 import pandas.testing as pdt
+import numpy as np
 
 from eva_data_analysis import (
     text_to_duration,
