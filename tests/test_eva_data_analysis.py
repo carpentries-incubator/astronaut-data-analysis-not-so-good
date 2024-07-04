@@ -84,7 +84,7 @@ def test_summarise_categorical_missvals():
         'country': ["Russia", "USA", pd.NA],
         'count': [1, 3, 1],
         'percentage': [20.0, 60.0, 20.0],
-    }, index=[0, 1])
+    }, index=[0, 1, 2])
     actual_result = summarise_categorical(test_input, "country")
 
     pdt.assert_frame_equal(actual_result, expected_result)
